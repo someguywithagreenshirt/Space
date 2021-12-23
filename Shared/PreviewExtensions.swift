@@ -90,7 +90,7 @@ extension View {
     
     //This will work, but could be better I think.
     // TODO: Consider better methods of having multiple interfaces
-    func namedPreview(passedName: String? = nil) -> some View {
+    func namedPreview(_ passedName: String? = nil) -> some View {
         let name = String.name(for: type(of: self))
         if let passedName = passedName {
             return previewWithName(passedName)
