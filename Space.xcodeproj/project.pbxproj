@@ -27,6 +27,8 @@
 		C08BC50C2774110500E4F54C /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50A2774110500E4F54C /* ViewType.swift */; };
 		C08BC50E2774152C00E4F54C /* PreviewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */; };
 		C08BC50F2774152C00E4F54C /* PreviewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */; };
+		C08BC5112774CF4600E4F54C /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5102774CF4600E4F54C /* TestData.swift */; };
+		C08BC5122774CF4600E4F54C /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5102774CF4600E4F54C /* TestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		C08BC507277410AD00E4F54C /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		C08BC50A2774110500E4F54C /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
 		C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewExtensions.swift; sourceTree = "<group>"; };
+		C08BC5102774CF4600E4F54C /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 				C0230E372771788500A3D02F /* SpaceApp.swift */,
 				C0230E382771788500A3D02F /* ContentView.swift */,
 				C08BC507277410AD00E4F54C /* TodoView.swift */,
+				C08BC5102774CF4600E4F54C /* TestData.swift */,
 				C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */,
 				C08BC50A2774110500E4F54C /* ViewType.swift */,
 				C0230E5C2771893900A3D02F /* DataController.swift */,
@@ -215,6 +219,7 @@
 				C0230E5D2771893900A3D02F /* DataController.swift in Sources */,
 				C0230E492771788500A3D02F /* ContentView.swift in Sources */,
 				C08BC50E2774152C00E4F54C /* PreviewExtensions.swift in Sources */,
+				C08BC5112774CF4600E4F54C /* TestData.swift in Sources */,
 				C08BC508277410AD00E4F54C /* TodoView.swift in Sources */,
 				C0230E6727718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */,
 				C0230E472771788500A3D02F /* SpaceApp.swift in Sources */,
@@ -231,6 +236,7 @@
 				C0230E5E2771893900A3D02F /* DataController.swift in Sources */,
 				C0230E4A2771788500A3D02F /* ContentView.swift in Sources */,
 				C08BC50F2774152C00E4F54C /* PreviewExtensions.swift in Sources */,
+				C08BC5122774CF4600E4F54C /* TestData.swift in Sources */,
 				C08BC509277410AD00E4F54C /* TodoView.swift in Sources */,
 				C0230E6827718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */,
 				C0230E482771788500A3D02F /* SpaceApp.swift in Sources */,

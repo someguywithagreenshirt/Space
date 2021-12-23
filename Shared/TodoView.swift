@@ -8,7 +8,7 @@
 import SwiftUI
 #warning("Todo list")
 // TODO: Top Tasks
-// - [ ] Get the TestData setup
+// - [X] Get the TestData setup
 // - [X] Accept different viewTypes
 // - [ ] Make Compact View that will go on timeline (or call it timeline view)
 // - [ ] Read Todo info from CoreData
@@ -20,41 +20,27 @@ import SwiftUI
 struct TodoView: View {
     let viewType: ViewType = .card
     var complete = false
-    let title: String = "Title of todo"
-    let description: String =
-    """
-    This is what this todo is all about, and how long is this?
-    
-    And now it is even longer and let's see if this effects it and in what ways.
-    """
+    let title: String = TestData.title
+    let description: String = TestData.description
     
     var body: some View {
         switch viewType {
         case .card:
-            Card()
+            Card(complete: complete) // temp pass-in for previews
         case .compact:
             Compact()
         case .fullscreen:
-            Card()
-        case .list:
-            Card()
+            FullScreen()
         }
-        
     }
 }
-
 
 // MARK: Card ViewTYpe
 extension TodoView {
     struct Card: View {
         var complete = false
-        let title: String = "Title of todo"
-        let description: String =
-            """
-            This is what this todo is all about, and how long is this?
-            
-            And now it is even longer and let's see if this effects it and in what ways.
-            """
+        let title: String = TestData.title
+        let description: String = TestData.description
         
         var body: some View {
             VStack (alignment: .leading, spacing: 0) {
@@ -108,15 +94,6 @@ extension TodoView {
 // MARK: FullScreen ViewType
 extension TodoView {
     struct FullScreen: View {
-        var body: some View {
-            EmptyView()
-        }
-    }
-}
-
-// MARK: List ViewType
-extension TodoView {
-    struct List: View {
         var body: some View {
             EmptyView()
         }
