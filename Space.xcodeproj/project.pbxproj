@@ -21,6 +21,12 @@
 		C0230E62277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230E5F277189CF00A3D02F /* Todo+CoreDataClass.swift */; };
 		C0230E6727718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */; };
 		C0230E6827718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */; };
+		C08BC508277410AD00E4F54C /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC507277410AD00E4F54C /* TodoView.swift */; };
+		C08BC509277410AD00E4F54C /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC507277410AD00E4F54C /* TodoView.swift */; };
+		C08BC50B2774110500E4F54C /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50A2774110500E4F54C /* ViewType.swift */; };
+		C08BC50C2774110500E4F54C /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50A2774110500E4F54C /* ViewType.swift */; };
+		C08BC50E2774152C00E4F54C /* PreviewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */; };
+		C08BC50F2774152C00E4F54C /* PreviewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,9 @@
 		C0230E5C2771893900A3D02F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		C0230E5F277189CF00A3D02F /* Todo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		C08BC507277410AD00E4F54C /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		C08BC50A2774110500E4F54C /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,9 @@
 			children = (
 				C0230E372771788500A3D02F /* SpaceApp.swift */,
 				C0230E382771788500A3D02F /* ContentView.swift */,
+				C08BC507277410AD00E4F54C /* TodoView.swift */,
+				C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */,
+				C08BC50A2774110500E4F54C /* ViewType.swift */,
 				C0230E5C2771893900A3D02F /* DataController.swift */,
 				C0230E392771788500A3D02F /* Assets.xcassets */,
 			);
@@ -202,9 +214,12 @@
 			files = (
 				C0230E5D2771893900A3D02F /* DataController.swift in Sources */,
 				C0230E492771788500A3D02F /* ContentView.swift in Sources */,
+				C08BC50E2774152C00E4F54C /* PreviewExtensions.swift in Sources */,
+				C08BC508277410AD00E4F54C /* TodoView.swift in Sources */,
 				C0230E6727718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */,
 				C0230E472771788500A3D02F /* SpaceApp.swift in Sources */,
 				C0230E5A27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
+				C08BC50B2774110500E4F54C /* ViewType.swift in Sources */,
 				C0230E61277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,9 +230,12 @@
 			files = (
 				C0230E5E2771893900A3D02F /* DataController.swift in Sources */,
 				C0230E4A2771788500A3D02F /* ContentView.swift in Sources */,
+				C08BC50F2774152C00E4F54C /* PreviewExtensions.swift in Sources */,
+				C08BC509277410AD00E4F54C /* TodoView.swift in Sources */,
 				C0230E6827718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */,
 				C0230E482771788500A3D02F /* SpaceApp.swift in Sources */,
 				C0230E5B27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
+				C08BC50C2774110500E4F54C /* ViewType.swift in Sources */,
 				C0230E62277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
