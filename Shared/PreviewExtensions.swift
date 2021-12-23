@@ -82,9 +82,21 @@ extension View {
             .previewDisplayName(name)
     }
     
-    func namedPreview() -> some View {
+    //I need to have two different ways of calling this.
+    //One with passing a name, and one without passing anything.
+    
+    //I want to call .namedPreview() and get the type name, and
+    //I want to call .namedPreview() and make that the new name.
+    
+    //This will work, but could be better I think.
+    // TODO: Consider better methods of having multiple interfaces
+    func namedPreview(passedName: String? = nil) -> some View {
         let name = String.name(for: type(of: self))
-        return previewWithName(name)
+        if let passedName = passedName {
+            return previewWithName(passedName)
+        } else {
+            return previewWithName(name)
+        }
     }
     
     func fullScreenPreviews(showAll: Bool = false) -> some View {
