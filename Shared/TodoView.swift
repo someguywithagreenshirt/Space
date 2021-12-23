@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TodoView: View {
     let viewType: ViewType = .card
+    var complete = false
     let title: String = "Title of todo"
     let description: String =
     """
@@ -18,10 +19,19 @@ struct TodoView: View {
     """
     var body: some View {
         VStack (alignment: .leading) {
-            Text(title)
-                .font(.largeTitle)
-                .fontWeight(.semibold)
+            HStack {
+                Group {
+                    if complete {
+                        Image(systemName: "checkmark.square")
+                    } else {
+                        Image(systemName: "square")
+                    }
+                }
+                Text(title)
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
                 .lineLimit(3)
+            }
             VStack {
                 Text(description)
                     .font(.body)
@@ -31,7 +41,8 @@ struct TodoView: View {
             .minimumScaleFactor(0.5)
         }
         .padding()
-        .background(RoundedRectangle(cornerRadius: 25).foregroundColor(.secondary))
+        .background(RoundedRectangle(cornerRadius: 25)
+                        .foregroundColor(.secondary))
     }
 }
 
@@ -39,7 +50,9 @@ struct TodoView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             TodoView()
-                .namedPreview(passedName: "Card Todo")
+                .namedPreview(passedName: "Incomplete Card Todo")
+            TodoView(complete: true)
+                .namedPreview(passedName: "Complete Card Todo")
         }
     }
 }
