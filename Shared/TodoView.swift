@@ -29,7 +29,7 @@ struct TodoView: View {
         case .card:
             Card(complete: complete) // temp pass-in for previews
         case .timeline:
-            Timeline()
+            TimelineTodo()
         case .fullscreen:
             FullScreen()
         }
@@ -84,7 +84,7 @@ extension TodoView {
 }
 
 // MARK: Compact ViewType
-fileprivate typealias Timeline = TodoView.Timeline
+fileprivate typealias TimelineTodo = TodoView.Timeline
 extension TodoView {
     struct Timeline: View {
         var complete = false
@@ -144,7 +144,7 @@ struct TodoView_Previews: PreviewProvider {
             .namedPreview("Card")
             
             HStack {
-                Timeline()
+                TimelineTodo()
             }
             .namedPreview("Timeline")
         }
