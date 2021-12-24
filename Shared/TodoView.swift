@@ -61,7 +61,7 @@ extension TodoView {
                         .lineLimit(3)
                     //.padding()
                 }
-                .padding([.top, .leading, .trailing])
+                .padding([.top, .leading, .trailing], 8.0)
                 
                 VStack {
                     Text(description)
@@ -70,15 +70,15 @@ extension TodoView {
                     Spacer()
                 }
                 .frame(minWidth: 200, minHeight: 200, maxHeight: 300)
-                .padding(.all)
-                .background(RoundedRectangle(cornerRadius: 25)
-                                .foregroundColor(.secondary))
+                .padding(.all, 8.0)
+                .background(.secondary)
+                .cornerRadius(25, corners: .bottomLeft)
+                .cornerRadius(25, corners: .bottomRight)
                 .minimumScaleFactor(0.5)
                 
             }
-            
-            .background(RoundedRectangle(cornerRadius: 25)
-                            .foregroundColor(.secondary))
+            .background(.secondary)
+            .cornerRadius(25)
         }
     }
 }

@@ -89,12 +89,11 @@ extension View {
     //I want to call .namedPreview() and make that the new name.
     
     //This will work, but could be better I think.
-    // TODO: Consider better methods of having multiple interfaces
     func namedPreview(_ passedName: String? = nil) -> some View {
-        let name = String.name(for: type(of: self))
         if let passedName = passedName {
             return previewWithName(passedName)
         } else {
+            let name = String.name(for: type(of: self))
             return previewWithName(name)
         }
     }
@@ -140,3 +139,13 @@ extension View {
     }
 }
 
+extension CGFloat {
+    func sigfigs(_ sigfigs: Int) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.minimumFractionDigits = sigfigs
+        numberFormatter.maximumFractionDigits = sigfigs
+
+        return numberFormatter.string(from: NSNumber(value: self)) ?? "bad"
+    }
+}

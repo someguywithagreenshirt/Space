@@ -35,11 +35,11 @@ struct RoundedCornerTester: View {
         VStack {
             HStack {
                 VStack {
-                    Text(String(format: "%.1f", Double(topLeft)))
+                    Text(topLeft.sigfigs(1))
                     Slider(value: $topLeft, in: 0...50)
                 }
                 VStack {
-                    Text(String(format: "%.1f", Double(topRight)))
+                    Text(topRight.sigfigs(1))
                     Slider(value: $topRight, in: 0...50)
                 }
             }
@@ -54,11 +54,11 @@ struct RoundedCornerTester: View {
             HStack {
                 VStack {
                     Slider(value: $bottomLeft, in: 0...50)
-                    Text(String(format: "%.1f", Double(bottomLeft)))
+                    Text(bottomLeft.sigfigs(1))
                 }
                 VStack {
                     Slider(value: $bottomRight, in: 0...50)
-                    Text(String(format: "%.1f", Double(bottomRight)))
+                    Text(bottomRight.sigfigs(1))
                 }
             }
         }
