@@ -29,6 +29,8 @@
 		C08BC50F2774152C00E4F54C /* PreviewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */; };
 		C08BC5112774CF4600E4F54C /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5102774CF4600E4F54C /* TestData.swift */; };
 		C08BC5122774CF4600E4F54C /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5102774CF4600E4F54C /* TestData.swift */; };
+		C08BC51427758E4F00E4F54C /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC51327758E4F00E4F54C /* RoundedCorner.swift */; };
+		C08BC51527758E4F00E4F54C /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC51327758E4F00E4F54C /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,7 @@
 		C08BC50A2774110500E4F54C /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
 		C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewExtensions.swift; sourceTree = "<group>"; };
 		C08BC5102774CF4600E4F54C /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		C08BC51327758E4F00E4F54C /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 				C0230E372771788500A3D02F /* SpaceApp.swift */,
 				C0230E382771788500A3D02F /* ContentView.swift */,
 				C08BC507277410AD00E4F54C /* TodoView.swift */,
+				C08BC51327758E4F00E4F54C /* RoundedCorner.swift */,
 				C08BC5102774CF4600E4F54C /* TestData.swift */,
 				C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */,
 				C08BC50A2774110500E4F54C /* ViewType.swift */,
@@ -225,6 +229,7 @@
 				C0230E472771788500A3D02F /* SpaceApp.swift in Sources */,
 				C0230E5A27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
 				C08BC50B2774110500E4F54C /* ViewType.swift in Sources */,
+				C08BC51427758E4F00E4F54C /* RoundedCorner.swift in Sources */,
 				C0230E61277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +247,7 @@
 				C0230E482771788500A3D02F /* SpaceApp.swift in Sources */,
 				C0230E5B27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
 				C08BC50C2774110500E4F54C /* ViewType.swift in Sources */,
+				C08BC51527758E4F00E4F54C /* RoundedCorner.swift in Sources */,
 				C0230E62277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

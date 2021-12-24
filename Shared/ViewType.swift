@@ -9,6 +9,6 @@ import Foundation
 
 enum ViewType {
     case card
-    case compact
     case fullscreen
+    case timeline
 }

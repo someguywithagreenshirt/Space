@@ -10,7 +10,8 @@ import SwiftUI
 // TODO: Top Tasks
 // - [X] Get the TestData setup
 // - [X] Accept different viewTypes
-// - [ ] Make Compact View that will go on timeline (or call it timeline view)
+// - [X] Make Compact View that will go on timeline (or call it timeline view)
+// - [ ] Import BMS round only certain sides object
 // - [ ] Read Todo info from CoreData
 // - [ ] Create models for timeblocking
 // - [ ] Get encoders and decoders setup
@@ -27,8 +28,8 @@ struct TodoView: View {
         switch viewType {
         case .card:
             Card(complete: complete) // temp pass-in for previews
-        case .compact:
-            Compact()
+        case .timeline:
+            Timeline()
         case .fullscreen:
             FullScreen()
         }
@@ -68,7 +69,7 @@ extension TodoView {
                     
                     Spacer()
                 }
-                .frame(minHeight: 200, maxHeight: 300)
+                .frame(minWidth: 200, minHeight: 200, maxHeight: 300)
                 .padding(.all)
                 .background(RoundedRectangle(cornerRadius: 25)
                                 .foregroundColor(.secondary))
@@ -83,15 +84,46 @@ extension TodoView {
 }
 
 // MARK: Compact ViewType
+fileprivate typealias Timeline = TodoView.Timeline
 extension TodoView {
-    struct Compact: View {
+    struct Timeline: View {
+        var complete = false
+        let title: String = TestData.title
+        let description: String = TestData.description
+        
         var body: some View {
-            EmptyView()
+            
+            VStack (alignment: .leading){
+                HStack {
+                    Group {
+                        if complete {
+                            Image(systemName: "checkmark.square")
+                            //.padding()
+                        } else {
+                            Image(systemName: "square")
+                            //.padding()
+                        }
+                    }
+                    Text(title)
+                        .font(.headline)
+                }
+                .padding([.top, .leading, .trailing], 5)
+                Text(description)
+                    .font(.caption)
+                    .padding([.leading, .bottom, .trailing], 5)
+            }
+            
+            .frame(width: 250, height: 100, alignment: .leading)
+            .background(Color.secondary)
+            .cornerRadius(25, corners: .topRight)
+            .cornerRadius(25, corners: .bottomRight)
+            .minimumScaleFactor(0.75)
         }
     }
 }
 
 // MARK: FullScreen ViewType
+fileprivate typealias FullScreen = TodoView.FullScreen
 extension TodoView {
     struct FullScreen: View {
         var body: some View {
@@ -104,10 +136,17 @@ extension TodoView {
 struct TodoView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TodoView()
-                .namedPreview("Incomplete Card Todo")
-            TodoView(complete: true)
-                .namedPreview("Complete Card Todo")
+            HStack {
+                TodoView()
+                    //.namedPreview("Incomplete Card Todo")
+                TodoView(complete: true)
+            }
+            .namedPreview("Card")
+            
+            HStack {
+                Timeline()
+            }
+            .namedPreview("Timeline")
         }
     }
 }
