@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: TimeBlocks Enum
-enum TimeBlocks: Int {
+// MARK: TimeBlock Enum
+enum TimeBlock: Int, CaseIterable {
     case midnight = 0000
     case twelve_thirty_am = 0030
     case one_am = 0100
@@ -58,3 +58,5 @@ enum TimeBlocks: Int {
     case eleven_pm = 2300
     case eleven_thirty_pm = 2330
 }
+
+

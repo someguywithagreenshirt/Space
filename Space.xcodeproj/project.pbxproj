@@ -33,8 +33,10 @@
 		C08BC51527758E4F00E4F54C /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC51327758E4F00E4F54C /* RoundedCorner.swift */; };
 		C08BC5172776221F00E4F54C /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5162776221F00E4F54C /* Timeline.swift */; };
 		C08BC5182776221F00E4F54C /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5162776221F00E4F54C /* Timeline.swift */; };
-		C08BC51A2776258600E4F54C /* TimeBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5192776258600E4F54C /* TimeBlocks.swift */; };
-		C08BC51B2776258600E4F54C /* TimeBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5192776258600E4F54C /* TimeBlocks.swift */; };
+		C08BC51A2776258600E4F54C /* TimeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5192776258600E4F54C /* TimeBlock.swift */; };
+		C08BC51B2776258600E4F54C /* TimeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5192776258600E4F54C /* TimeBlock.swift */; };
+		C08BC51D277655C700E4F54C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC51C277655C700E4F54C /* Models.swift */; };
+		C08BC51E277655C700E4F54C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC51C277655C700E4F54C /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +56,8 @@
 		C08BC5102774CF4600E4F54C /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		C08BC51327758E4F00E4F54C /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		C08BC5162776221F00E4F54C /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
-		C08BC5192776258600E4F54C /* TimeBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBlocks.swift; sourceTree = "<group>"; };
+		C08BC5192776258600E4F54C /* TimeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBlock.swift; sourceTree = "<group>"; };
+		C08BC51C277655C700E4F54C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +95,8 @@
 				C0230E382771788500A3D02F /* ContentView.swift */,
 				C08BC507277410AD00E4F54C /* TodoView.swift */,
 				C08BC5162776221F00E4F54C /* Timeline.swift */,
-				C08BC5192776258600E4F54C /* TimeBlocks.swift */,
+				C08BC51C277655C700E4F54C /* Models.swift */,
+				C08BC5192776258600E4F54C /* TimeBlock.swift */,
 				C08BC51327758E4F00E4F54C /* RoundedCorner.swift */,
 				C08BC5102774CF4600E4F54C /* TestData.swift */,
 				C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */,
@@ -228,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C08BC51A2776258600E4F54C /* TimeBlocks.swift in Sources */,
+				C08BC51A2776258600E4F54C /* TimeBlock.swift in Sources */,
 				C08BC5172776221F00E4F54C /* Timeline.swift in Sources */,
 				C0230E5D2771893900A3D02F /* DataController.swift in Sources */,
 				C0230E492771788500A3D02F /* ContentView.swift in Sources */,
@@ -241,6 +245,7 @@
 				C08BC50B2774110500E4F54C /* ViewType.swift in Sources */,
 				C08BC51427758E4F00E4F54C /* RoundedCorner.swift in Sources */,
 				C0230E61277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
+				C08BC51D277655C700E4F54C /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C08BC51B2776258600E4F54C /* TimeBlocks.swift in Sources */,
+				C08BC51B2776258600E4F54C /* TimeBlock.swift in Sources */,
 				C08BC5182776221F00E4F54C /* Timeline.swift in Sources */,
 				C0230E5E2771893900A3D02F /* DataController.swift in Sources */,
 				C0230E4A2771788500A3D02F /* ContentView.swift in Sources */,
@@ -261,6 +266,7 @@
 				C08BC50C2774110500E4F54C /* ViewType.swift in Sources */,
 				C08BC51527758E4F00E4F54C /* RoundedCorner.swift in Sources */,
 				C0230E62277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
+				C08BC51E277655C700E4F54C /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

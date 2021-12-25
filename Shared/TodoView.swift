@@ -11,9 +11,10 @@ import SwiftUI
 // - [X] Get the TestData setup
 // - [X] Accept different viewTypes
 // - [X] Make Compact View that will go on timeline (or call it timeline view)
-// - [ ] Import BMS round only certain sides object
-// - [ ] Read Todo info from CoreData
+// - [X] Import BMS round only certain sides object
 // - [ ] Create models for timeblocking
+// - [ ] DateFormatter to get date and times in format I need. Saturday March 04th HH:mm
+// - [ ] Read Todo info from CoreData
 // - [ ] Get encoders and decoders setup
 // - [ ] Turn some of the above and the preview code into snippets
 // - [ ] Enum Time in half hour blocks (or should I just Date()?)
