@@ -8,29 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-//    var body: some View {
-//        VStack {
-//            VStack {
-//                ScrollView {
-//                    Timeline()
-//                }
-//            }
-//        }
-//    }
-    
-    //@State private var isLoggingIn = false
-    //@EnvironmentObject private var stateController: StateController
+    @EnvironmentObject private var stateController: StateController
     //@EnvironmentObject private var settingsController: SettingsController
     //@AppStorage(Lifehacks_swiftuiApp.Keys.isLoggedIn) private var isLoggedIn = false
     @SceneStorage("ContentView.SelectedTab") private var selectedTab = 0
     
     var body: some View {
         TabView (selection: $selectedTab){
-            NavigationView {
+            // I'm thinking that no navigation view will be needed for this view.
+            // And it allows it more screen space which is important
+            //NavigationView {
                 ScrollView {
                     Timeline()
                 }
-            }
+            //}
             .tabItem { Label("Timeline", systemImage: "calendar.day.timeline.left") }
             .tag(0)
             

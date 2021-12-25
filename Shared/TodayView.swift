@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// TODO: Create controller for actual todolist
+// - [ ] Create controller
 struct TodayView: View {
     var body: some View {
         List {

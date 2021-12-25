@@ -12,9 +12,12 @@ import SwiftUI
 /// It can also mean like "give me space" since it should provide margin in life.
 @main
 struct SpaceApp: App {
+    @StateObject private var stateController = StateController()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(stateController)
         }
     }
 }
