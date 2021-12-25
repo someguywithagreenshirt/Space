@@ -37,6 +37,8 @@
 		C08BC51B2776258600E4F54C /* TimeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC5192776258600E4F54C /* TimeBlock.swift */; };
 		C08BC51D277655C700E4F54C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC51C277655C700E4F54C /* Models.swift */; };
 		C08BC51E277655C700E4F54C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC51C277655C700E4F54C /* Models.swift */; };
+		C08BC5202777AA8A00E4F54C /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC51F2777AA8A00E4F54C /* TodayView.swift */; };
+		C08BC5212777AA8A00E4F54C /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC51F2777AA8A00E4F54C /* TodayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,7 @@
 		C08BC5162776221F00E4F54C /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		C08BC5192776258600E4F54C /* TimeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBlock.swift; sourceTree = "<group>"; };
 		C08BC51C277655C700E4F54C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C08BC51F2777AA8A00E4F54C /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,7 @@
 			children = (
 				C0230E372771788500A3D02F /* SpaceApp.swift */,
 				C0230E382771788500A3D02F /* ContentView.swift */,
+				C08BC51F2777AA8A00E4F54C /* TodayView.swift */,
 				C08BC507277410AD00E4F54C /* TodoView.swift */,
 				C08BC5162776221F00E4F54C /* Timeline.swift */,
 				C08BC51C277655C700E4F54C /* Models.swift */,
@@ -245,6 +249,7 @@
 				C08BC50B2774110500E4F54C /* ViewType.swift in Sources */,
 				C08BC51427758E4F00E4F54C /* RoundedCorner.swift in Sources */,
 				C0230E61277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
+				C08BC5202777AA8A00E4F54C /* TodayView.swift in Sources */,
 				C08BC51D277655C700E4F54C /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +271,7 @@
 				C08BC50C2774110500E4F54C /* ViewType.swift in Sources */,
 				C08BC51527758E4F00E4F54C /* RoundedCorner.swift in Sources */,
 				C0230E62277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
+				C08BC5212777AA8A00E4F54C /* TodayView.swift in Sources */,
 				C08BC51E277655C700E4F54C /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

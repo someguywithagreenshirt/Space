@@ -16,4 +16,10 @@ struct TestData {
         
         And now it is even longer and let's see if this effects it and in what ways.
         """
+    static var todo1 = Models.Todo(title: title, description: description)
+    static var todo2 = Models.Todo(title: title, description: description)
+    static var todo3 = Models.Todo(title: title, description: description)
+    static var todo4 = Models.Todo(title: title, description: description)
+    static var todo5 = Models.Todo(title: title, description: description)
+    static var todoList: [Models.Todo] = [todo1, todo2, todo3, todo4, todo5]
 }

@@ -74,8 +74,9 @@ extension Models {
     ///   - dueDate: Date/time that you will put this todo in a timeline
     ///   - deadlineDate: Date/time it must be completed by or problems. Adding this creates a Nag mechanic
     ///   - completionDate: An array of date/time when completed toggles from false to true
-    struct Todo {
+    struct Todo: Identifiable {
         // Free text; most used
+        let id = UUID()
         var title: String
         var description: String
         
