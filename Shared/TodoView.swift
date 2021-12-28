@@ -17,10 +17,13 @@ import SwiftUI
 // - [ ] Read Todo info from CoreData
 // - [ ] Get encoders and decoders setup
 // - [ ] Turn some of the above and the preview code into snippets
-// - [ ] Enum Time in half hour blocks (or should I just Date()?)
+// - [X] Enum Time in half hour blocks (or should I just Date()?)
+// - [ ] I started doing my own thing because I don't know Date() well enough.
+//       I really need to watch a video Date().
 
-struct TodoView: View {
-    let viewType: ViewType = .card
+struct TodoView: View, ViewTypeProtocol {
+    var viewType: ViewType = .card
+    let allViewTypes: [ViewType] = ViewType.allCases
     var complete = false
     let title: String = TestData.title
     let description: String = TestData.description
@@ -33,6 +36,8 @@ struct TodoView: View {
             TimelineTodo()
         case .fullscreen:
             FullScreen()
+        case .ghost:
+            EmptyView()
         }
     }
 }

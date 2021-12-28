@@ -16,8 +16,14 @@ struct SpaceApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(stateController)
+            if ( UIDevice.current.model.range(of: "iPad") != nil){
+                //print("I AM IPAD")
+                PlannerView()
+            } else {
+                //print("I AM IPHONE")
+                ContentView()
+                    .environmentObject(stateController)
+            }
         }
     }
 }

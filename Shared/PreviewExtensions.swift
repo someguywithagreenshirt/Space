@@ -139,6 +139,30 @@ extension View {
     }
 }
 
+enum DeviceNames: String {
+    case ipad9 = "iPad (9th generation"
+    case ipadAir = "iPad Air (4th generation)"
+    case ipadPro9 = "iPad Pro (9.7-inch)"
+    case ipadPro11 = "iPad Pro (11-inch) (3rd generation)"
+    case ipadPro12 = "iPad Pro (12.9-inch) (5th generation)"
+    case ipadmini = "iPad mini (6th generation)"
+    case iphone8 =  "iPhone 8"
+    case iphone8plus = "iPhone 8 Plus"
+    case iphone11 = "iPhone 11"
+    case iphone11pro = "iPhone 11 Pro"
+    case iphone11promax = "iPhone 11 Pro Max"
+    case iphone12 = "iPhone 12"
+    case iphone12pro = "iPhone 12 Pro"
+    case iphone12promax = "iPhone 12 Pro Max"
+    case iphone12mini = "iPhone 12 mini"
+    case iphone13 = "iPhone 13"
+    case iphone13pro = "iPhone 13 Pro"
+    case iphone13promax = "iPhone 13 Pro Max"
+    case iphone13mini = "iPhone 13 mini"
+    case iphonese = "iPhone SE (2nd generation)"
+    case ipod = "iPod touch (7th generation)"
+}
+
 extension CGFloat {
     func sigfigs(_ sigfigs: Int) -> String {
         let numberFormatter = NumberFormatter()
