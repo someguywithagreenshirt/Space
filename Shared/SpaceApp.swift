@@ -18,7 +18,7 @@ struct SpaceApp: App {
         WindowGroup {
             if ( UIDevice.current.model.range(of: "iPad") != nil){
                 //print("I AM IPAD")
-                PlannerView()
+                TBBetaView()
             } else {
                 //print("I AM IPHONE")
                 ContentView()

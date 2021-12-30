@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TimeblockingSkeletonView: View {
+    
     var body: some View {
         ZStack {
             HStack {

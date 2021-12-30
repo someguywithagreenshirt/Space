@@ -44,7 +44,8 @@ struct RoundedCornerTester: View {
                 }
             }
             
-            Text("Round Me").frame(width: 200, height: 100)
+            Text("Round Me")
+                .frame(width: 200, height: 100)
                 .background(.red)
                 .cornerRadius(topLeft, corners: .topLeft)
                 .cornerRadius(topRight, corners: .topRight)

@@ -21,6 +21,8 @@
 		C0230E62277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230E5F277189CF00A3D02F /* Todo+CoreDataClass.swift */; };
 		C0230E6727718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */; };
 		C0230E6827718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */; };
+		C07DB4B9277D389E0070DE26 /* TBBetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4B8277D389E0070DE26 /* TBBetaView.swift */; };
+		C07DB4BA277D389E0070DE26 /* TBBetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4B8277D389E0070DE26 /* TBBetaView.swift */; };
 		C08BC508277410AD00E4F54C /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC507277410AD00E4F54C /* TodoView.swift */; };
 		C08BC509277410AD00E4F54C /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC507277410AD00E4F54C /* TodoView.swift */; };
 		C08BC50B2774110500E4F54C /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50A2774110500E4F54C /* ViewType.swift */; };
@@ -47,6 +49,12 @@
 		C08BC52A277AB80600E4F54C /* PlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC528277AB80600E4F54C /* PlannerView.swift */; };
 		C08BC52F277AC39100E4F54C /* TimeblockingSkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC52E277AC39100E4F54C /* TimeblockingSkeletonView.swift */; };
 		C08BC530277AC39100E4F54C /* TimeblockingSkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC52E277AC39100E4F54C /* TimeblockingSkeletonView.swift */; };
+		C08BC533277D17CD00E4F54C /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C08BC532277D17CD00E4F54C /* Algorithms */; };
+		C08BC536277D180E00E4F54C /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = C08BC535277D180E00E4F54C /* Collections */; };
+		C08BC538277D180E00E4F54C /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = C08BC537277D180E00E4F54C /* DequeModule */; };
+		C08BC53A277D180E00E4F54C /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = C08BC539277D180E00E4F54C /* OrderedCollections */; };
+		C08BC53C277D1B0B00E4F54C /* TimeBlockingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC53B277D1B0B00E4F54C /* TimeBlockingView.swift */; };
+		C08BC53D277D1B0B00E4F54C /* TimeBlockingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC53B277D1B0B00E4F54C /* TimeBlockingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +68,7 @@
 		C0230E5C2771893900A3D02F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		C0230E5F277189CF00A3D02F /* Todo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		C07DB4B8277D389E0070DE26 /* TBBetaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBBetaView.swift; sourceTree = "<group>"; };
 		C08BC507277410AD00E4F54C /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		C08BC50A2774110500E4F54C /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
 		C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewExtensions.swift; sourceTree = "<group>"; };
@@ -73,6 +82,7 @@
 		C08BC5252777B23800E4F54C /* StorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
 		C08BC528277AB80600E4F54C /* PlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerView.swift; sourceTree = "<group>"; };
 		C08BC52E277AC39100E4F54C /* TimeblockingSkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeblockingSkeletonView.swift; sourceTree = "<group>"; };
+		C08BC53B277D1B0B00E4F54C /* TimeBlockingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBlockingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08BC536277D180E00E4F54C /* Collections in Frameworks */,
+				C08BC533277D17CD00E4F54C /* Algorithms in Frameworks */,
+				C08BC53A277D180E00E4F54C /* OrderedCollections in Frameworks */,
+				C08BC538277D180E00E4F54C /* DequeModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,23 +120,25 @@
 		C0230E362771788500A3D02F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				C0230E372771788500A3D02F /* SpaceApp.swift */,
+				C0230E392771788500A3D02F /* Assets.xcassets */,
 				C0230E382771788500A3D02F /* ContentView.swift */,
-				C08BC51F2777AA8A00E4F54C /* TodayView.swift */,
+				C0230E5C2771893900A3D02F /* DataController.swift */,
+				C08BC51C277655C700E4F54C /* Models.swift */,
+				C08BC528277AB80600E4F54C /* PlannerView.swift */,
+				C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */,
+				C08BC51327758E4F00E4F54C /* RoundedCorner.swift */,
+				C0230E372771788500A3D02F /* SpaceApp.swift */,
 				C08BC5222777B1A200E4F54C /* StateController.swift */,
 				C08BC5252777B23800E4F54C /* StorageController.swift */,
-				C08BC507277410AD00E4F54C /* TodoView.swift */,
-				C08BC528277AB80600E4F54C /* PlannerView.swift */,
-				C08BC52E277AC39100E4F54C /* TimeblockingSkeletonView.swift */,
-				C08BC5162776221F00E4F54C /* Timeline.swift */,
-				C08BC51C277655C700E4F54C /* Models.swift */,
-				C08BC5192776258600E4F54C /* TimeBlock.swift */,
-				C08BC51327758E4F00E4F54C /* RoundedCorner.swift */,
 				C08BC5102774CF4600E4F54C /* TestData.swift */,
-				C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */,
+				C08BC5192776258600E4F54C /* TimeBlock.swift */,
+				C08BC52E277AC39100E4F54C /* TimeblockingSkeletonView.swift */,
+				C08BC53B277D1B0B00E4F54C /* TimeBlockingView.swift */,
+				C07DB4B8277D389E0070DE26 /* TBBetaView.swift */,
+				C08BC5162776221F00E4F54C /* Timeline.swift */,
+				C08BC51F2777AA8A00E4F54C /* TodayView.swift */,
+				C08BC507277410AD00E4F54C /* TodoView.swift */,
 				C08BC50A2774110500E4F54C /* ViewType.swift */,
-				C0230E5C2771893900A3D02F /* DataController.swift */,
-				C0230E392771788500A3D02F /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -170,6 +186,12 @@
 			dependencies = (
 			);
 			name = "Space (iOS)";
+			packageProductDependencies = (
+				C08BC532277D17CD00E4F54C /* Algorithms */,
+				C08BC535277D180E00E4F54C /* Collections */,
+				C08BC537277D180E00E4F54C /* DequeModule */,
+				C08BC539277D180E00E4F54C /* OrderedCollections */,
+			);
 			productName = "Space (iOS)";
 			productReference = C0230E3E2771788500A3D02F /* Space.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +240,10 @@
 				Base,
 			);
 			mainGroup = C0230E312771788500A3D02F;
+			packageReferences = (
+				C08BC531277D17CD00E4F54C /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				C08BC534277D180E00E4F54C /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = C0230E3F2771788500A3D02F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,6 +294,8 @@
 				C0230E5A27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
 				C08BC50B2774110500E4F54C /* ViewType.swift in Sources */,
 				C08BC51427758E4F00E4F54C /* RoundedCorner.swift in Sources */,
+				C08BC53C277D1B0B00E4F54C /* TimeBlockingView.swift in Sources */,
+				C07DB4B9277D389E0070DE26 /* TBBetaView.swift in Sources */,
 				C0230E61277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
 				C08BC5202777AA8A00E4F54C /* TodayView.swift in Sources */,
 				C08BC51D277655C700E4F54C /* Models.swift in Sources */,
@@ -294,6 +322,8 @@
 				C0230E5B27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
 				C08BC50C2774110500E4F54C /* ViewType.swift in Sources */,
 				C08BC51527758E4F00E4F54C /* RoundedCorner.swift in Sources */,
+				C08BC53D277D1B0B00E4F54C /* TimeBlockingView.swift in Sources */,
+				C07DB4BA277D389E0070DE26 /* TBBetaView.swift in Sources */,
 				C0230E62277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
 				C08BC5212777AA8A00E4F54C /* TodayView.swift in Sources */,
 				C08BC51E277655C700E4F54C /* Models.swift in Sources */,
@@ -562,6 +592,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C08BC531277D17CD00E4F54C /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		C08BC534277D180E00E4F54C /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C08BC532277D17CD00E4F54C /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C08BC531277D17CD00E4F54C /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		C08BC535277D180E00E4F54C /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C08BC534277D180E00E4F54C /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		C08BC537277D180E00E4F54C /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C08BC534277D180E00E4F54C /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		C08BC539277D180E00E4F54C /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C08BC534277D180E00E4F54C /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C0230E5827717F3E00A3D02F /* Model.xcdatamodeld */ = {
