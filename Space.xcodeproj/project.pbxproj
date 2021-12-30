@@ -23,6 +23,8 @@
 		C0230E6827718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */; };
 		C07DB4B9277D389E0070DE26 /* TBBetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4B8277D389E0070DE26 /* TBBetaView.swift */; };
 		C07DB4BA277D389E0070DE26 /* TBBetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4B8277D389E0070DE26 /* TBBetaView.swift */; };
+		C07DB4BC277D69670070DE26 /* TBGammaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4BB277D69670070DE26 /* TBGammaView.swift */; };
+		C07DB4BD277D69670070DE26 /* TBGammaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4BB277D69670070DE26 /* TBGammaView.swift */; };
 		C08BC508277410AD00E4F54C /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC507277410AD00E4F54C /* TodoView.swift */; };
 		C08BC509277410AD00E4F54C /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC507277410AD00E4F54C /* TodoView.swift */; };
 		C08BC50B2774110500E4F54C /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50A2774110500E4F54C /* ViewType.swift */; };
@@ -69,6 +71,7 @@
 		C0230E5F277189CF00A3D02F /* Todo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		C07DB4B8277D389E0070DE26 /* TBBetaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBBetaView.swift; sourceTree = "<group>"; };
+		C07DB4BB277D69670070DE26 /* TBGammaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBGammaView.swift; sourceTree = "<group>"; };
 		C08BC507277410AD00E4F54C /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		C08BC50A2774110500E4F54C /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
 		C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewExtensions.swift; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 				C08BC52E277AC39100E4F54C /* TimeblockingSkeletonView.swift */,
 				C08BC53B277D1B0B00E4F54C /* TimeBlockingView.swift */,
 				C07DB4B8277D389E0070DE26 /* TBBetaView.swift */,
+				C07DB4BB277D69670070DE26 /* TBGammaView.swift */,
 				C08BC5162776221F00E4F54C /* Timeline.swift */,
 				C08BC51F2777AA8A00E4F54C /* TodayView.swift */,
 				C08BC507277410AD00E4F54C /* TodoView.swift */,
@@ -278,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07DB4BC277D69670070DE26 /* TBGammaView.swift in Sources */,
 				C08BC51A2776258600E4F54C /* TimeBlock.swift in Sources */,
 				C08BC5172776221F00E4F54C /* Timeline.swift in Sources */,
 				C0230E5D2771893900A3D02F /* DataController.swift in Sources */,
@@ -306,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07DB4BD277D69670070DE26 /* TBGammaView.swift in Sources */,
 				C08BC51B2776258600E4F54C /* TimeBlock.swift in Sources */,
 				C08BC5182776221F00E4F54C /* Timeline.swift in Sources */,
 				C0230E5E2771893900A3D02F /* DataController.swift in Sources */,
