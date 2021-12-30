@@ -31,12 +31,7 @@ struct TBBetaView: View {
     }
 }
 
-extension CGPoint: Hashable {
-  public func hash(into hasher: inout Hasher) {
-    hasher.combine(x)
-    hasher.combine(y)
-  }
-}
+
 
 extension TBBetaView {
     func createHourLines (hours: Int, height: CGFloat, xPos: CGFloat) -> [CGPoint] {

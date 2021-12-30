@@ -9,90 +9,71 @@ import SwiftUI
 
 struct TBGammaView: View {
     let hours = 18
+    let startHour = 6
     
     var body: some View {
         GeometryReader { grp in
             let grpFrame = grp.frame(in: .local)
-            let pointArray = createHourLines(hours: hours,
+            let positionOfEachHourLine: [CGPoint] = createHourLines(hours: hours,
                                              height: grpFrame.height,
-                                             xPos: grpFrame.midX)
-            let blockHeight = pointArray[1].y - pointArray[0].y
-            let thirdOfBlock = blockHeight / 3
-            let secondLineOffset = (blockHeight / 3) + (blockHeight / 3)
+                                             xPos: grpFrame.midX,
+                                             includeLast: true)
+            let positionOfEachHourStart: [CGPoint] = createHourLines(hours: hours,
+                                                          height: grpFrame.height,
+                                                          xPos: grpFrame.midX,
+                                                          includeLast: false)
+            let blockHeight = positionOfEachHourLine[1].y - positionOfEachHourLine[0].y
             
-            let hourStart = 6
             
-            ZStack {
-                //                Rectangle()
-                //                    .frame(width: 3, height: grpFrame.height)
-                //                    .position(x: grpFrame.midX, y: grpFrame.midY)
-                
-                
-//                VStack (spacing: 0) {
-//                    ForEach (pointArray, id: \.self) { hour in
-//                        VStack (spacing: 0) {
-//                            Rectangle()
-//                                .frame(width: 3, height: blockHeight / 3)
-//                                .position(hour)
-//                            Text("\(hourStart)")
-//                            Rectangle()
-//                                .frame(width: 3, height: blockHeight / 3)
-//                                .position(x: hour.x, y: hour.y + secondLineOffset)
-//                        }
-//                    }
-//                }
-                
-                
-                
-//                VStack (spacing: 0) {
-//                    Rectangle()
-//                        .frame(width: 3, height: blockHeight / 3)
-//                        .position(pointArray[0])
-//                        .offset(x: 0, y: (blockHeight / 3) / 2)
-//                    Text("6:00")
-//                    Rectangle()
-//                        .frame(width: 3, height: blockHeight / 3)
-//                        .position(pointArray[0])
-//                        .offset(x: 0, y: thirdOfBlock * 2)
-//
-//                }
-                TripleChunk(blockHeight: blockHeight, thirdOfBlock: thirdOfBlock, position: pointArray[0])
-                
-                ForEach (pointArray, id: \.self) { hour in
-                    Rectangle()
-                    // 15 may look better. Old planner was
-                    // (grpFrame.height / CGFloat(hours) ) * 2 is 146.8888
-                        .frame(width: 49, height: 3)
-                        .position(hour)
+            VStack (spacing: 0) {
+                ForEach (positionOfEachHourStart, id: \.self) { point in
+                    TripleChunk(blockHeight: blockHeight,
+                                text: (positionOfEachHourStart.firstIndex(of: point) ?? 7) + startHour)
                 }
+            }
+            .position(positionOfEachHourLine[0])
+            .offset(x: 0, y: grpFrame.height / 2 )
+            
+            ForEach (positionOfEachHourLine, id: \.self) { hour in
+                Rectangle()
+                    .frame(width: 49, height: 3)
+                    .position(hour)
+                
+                
             }
         }
     }
 }
 
-struct TripleChunk: View {
-    let blockHeight: CGFloat
-    let thirdOfBlock: CGFloat
-    let position: CGPoint
-    
-    var body: some View {
-        VStack (spacing: 0) {
-            Rectangle()
-                .frame(width: 3, height: blockHeight / 3)
-                .position(position)
-                .offset(x: 0, y: (blockHeight / 3) / 2)
-            Text("6:00")
-            Rectangle()
-                .frame(width: 3, height: blockHeight / 3)
-                .position(position)
-                .offset(x: 0, y: thirdOfBlock * 2)
+extension TBGammaView {
+    struct TripleChunk: View {
+        let blockHeight: CGFloat
+        let text: Int
+        
+        var body: some View {
             
+            VStack (spacing: 0) {
+                Rectangle()
+                    .frame(width: 3, height: blockHeight / 3)
+                Text("\(text):00")
+                    .padding(0)
+                    .frame(height: blockHeight / 3)
+                Rectangle()
+                    .frame(width: 3, height: blockHeight / 3)
+            }
         }
     }
 }
 
+extension CGPoint: Hashable {
+  public func hash(into hasher: inout Hasher) {
+    hasher.combine(x)
+    hasher.combine(y)
+  }
+}
+
 extension TBGammaView {
-    func createHourLines (hours: Int, height: CGFloat, xPos: CGFloat) -> [CGPoint] {
+    func createHourLines (hours: Int, height: CGFloat, xPos: CGFloat, includeLast: Bool) -> [CGPoint] {
         var hourLines: [CGPoint] = []
         // this is truncating and is bad.
         let lineHeight: CGFloat = height / CGFloat(hours)
@@ -102,7 +83,12 @@ extension TBGammaView {
             hourLines.append(CGPoint(x: xPos, y: CGFloat(lineHeight) * CGFloat(hour)) )
         }
         precondition(hourLines.count > 2)
-        return hourLines
+        if includeLast {
+            return hourLines
+        } else {
+            hourLines.removeLast()
+            return hourLines
+        }
     }
 }
 

@@ -70,12 +70,13 @@ extension TodoView {
                 .padding([.top, .leading, .trailing], 8.0)
                 
                 VStack {
+                    Divider()
                     Text(description)
                         .font(.caption)
                     
                     Spacer()
                 }
-                .frame(minWidth: 200, minHeight: 200, maxHeight: 300)
+                .frame(minWidth: 200, maxWidth: 250, minHeight: 200, maxHeight: 300)
                 .padding(.all, 8.0)
                 .background(.secondary)
                 .cornerRadius(25, corners: .bottomLeft)
@@ -99,7 +100,7 @@ extension TodoView {
         
         var body: some View {
             
-            VStack (alignment: .leading){
+            VStack (alignment: .leading, spacing: 2){
                 HStack {
                     Group {
                         if complete {
@@ -114,6 +115,10 @@ extension TodoView {
                         .font(.headline)
                 }
                 .padding([.top, .leading, .trailing], 5)
+                
+                Divider()
+                    .padding(0)
+                
                 Text(description)
                     .font(.caption)
                     .padding([.leading, .bottom, .trailing], 5)
