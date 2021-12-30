@@ -7,6 +7,15 @@
 
 import Foundation
 
+struct Reality: Identifiable {
+    let id = UUID()
+    var blockArray: [IndividualBlock] = []
+    
+    mutating func addBlock(_ block: IndividualBlock) -> Void {
+        blockArray.append(block)
+    }
+}
+
 struct Models {
     static var timeBlockDictionary: Dictionary<Int, TimeBlock> = [
         0000: TimeBlock.midnight,

@@ -22,4 +22,28 @@ struct TestData {
     static var todo4 = Models.Todo(title: title, description: description)
     static var todo5 = Models.Todo(title: title, description: description)
     static var todoList: [Models.Todo] = [todo1, todo2, todo3, todo4, todo5]
+    
+    //static let testBlock = IndividualBlock(blockHeight: 73.444444444444442)
+    static let testBlock = IndividualBlock(blockHeight: 54.33333333333)
+    
+    static let realityLine: [IndividualBlock?] = [
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock,
+        testBlock
+    ]
 }
