@@ -82,6 +82,13 @@ extension View {
             .previewDisplayName(name)
     }
     
+    func previewIpad(_ deviceName: DeviceNames) -> some View {
+        self
+            .previewDevice(PreviewDevice(rawValue: deviceName.rawValue))
+            .previewInterfaceOrientation(.landscapeLeft)
+    }
+        
+    
     //I need to have two different ways of calling this.
     //One with passing a name, and one without passing anything.
     

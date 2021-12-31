@@ -35,8 +35,8 @@
 		C07DB4CC277E6A930070DE26 /* RotatingPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4CA277E6A930070DE26 /* RotatingPractice.swift */; };
 		C07DB4CE277E708A0070DE26 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4CD277E708A0070DE26 /* Flashcard.swift */; };
 		C07DB4CF277E708A0070DE26 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4CD277E708A0070DE26 /* Flashcard.swift */; };
-		C07DB4D2277E891A0070DE26 /* MakePrettier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4D1277E891A0070DE26 /* MakePrettier.swift */; };
-		C07DB4D3277E891A0070DE26 /* MakePrettier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4D1277E891A0070DE26 /* MakePrettier.swift */; };
+		C07DB4D2277E891A0070DE26 /* HalfScreenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4D1277E891A0070DE26 /* HalfScreenLayout.swift */; };
+		C07DB4D3277E891A0070DE26 /* HalfScreenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4D1277E891A0070DE26 /* HalfScreenLayout.swift */; };
 		C08BC508277410AD00E4F54C /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC507277410AD00E4F54C /* TodoView.swift */; };
 		C08BC509277410AD00E4F54C /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC507277410AD00E4F54C /* TodoView.swift */; };
 		C08BC50B2774110500E4F54C /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BC50A2774110500E4F54C /* ViewType.swift */; };
@@ -89,7 +89,7 @@
 		C07DB4C7277E42DE0070DE26 /* SizingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizingController.swift; sourceTree = "<group>"; };
 		C07DB4CA277E6A930070DE26 /* RotatingPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingPractice.swift; sourceTree = "<group>"; };
 		C07DB4CD277E708A0070DE26 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
-		C07DB4D1277E891A0070DE26 /* MakePrettier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePrettier.swift; sourceTree = "<group>"; };
+		C07DB4D1277E891A0070DE26 /* HalfScreenLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfScreenLayout.swift; sourceTree = "<group>"; };
 		C08BC507277410AD00E4F54C /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		C08BC50A2774110500E4F54C /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
 		C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewExtensions.swift; sourceTree = "<group>"; };
@@ -143,27 +143,21 @@
 			children = (
 				C0230E392771788500A3D02F /* Assets.xcassets */,
 				C0230E382771788500A3D02F /* ContentView.swift */,
-				C0230E5C2771893900A3D02F /* DataController.swift */,
+				C07DB4D5277E8C5E0070DE26 /* Controller */,
 				C08BC51C277655C700E4F54C /* Models.swift */,
 				C08BC528277AB80600E4F54C /* PlannerView.swift */,
-				C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */,
-				C08BC51327758E4F00E4F54C /* RoundedCorner.swift */,
-				C0230E372771788500A3D02F /* SpaceApp.swift */,
-				C08BC5222777B1A200E4F54C /* StateController.swift */,
-				C08BC5252777B23800E4F54C /* StorageController.swift */,
-				C08BC5102774CF4600E4F54C /* TestData.swift */,
-				C08BC5192776258600E4F54C /* TimeBlock.swift */,
-				C08BC52E277AC39100E4F54C /* TimeblockingSkeletonView.swift */,
-				C08BC53B277D1B0B00E4F54C /* TimeBlockingView.swift */,
 				C07DB4D0277E88A60070DE26 /* Scratch Paper */,
+				C07DB4D4277E8C1F0070DE26 /* Solid Views */,
 				C07DB4B8277D389E0070DE26 /* TBBetaView.swift */,
 				C07DB4BB277D69670070DE26 /* TBGammaView.swift */,
 				C07DB4C1277E12C30070DE26 /* TBOmegaView.swift */,
-				C07DB4C7277E42DE0070DE26 /* SizingController.swift */,
+				C08BC5192776258600E4F54C /* TimeBlock.swift */,
+				C08BC52E277AC39100E4F54C /* TimeblockingSkeletonView.swift */,
+				C08BC53B277D1B0B00E4F54C /* TimeBlockingView.swift */,
 				C08BC5162776221F00E4F54C /* Timeline.swift */,
 				C08BC51F2777AA8A00E4F54C /* TodayView.swift */,
+				C07DB4D6277E8C960070DE26 /* Utilities */,
 				C08BC507277410AD00E4F54C /* TodoView.swift */,
-				C08BC50A2774110500E4F54C /* ViewType.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -199,11 +193,41 @@
 			isa = PBXGroup;
 			children = (
 				C07DB4CD277E708A0070DE26 /* Flashcard.swift */,
-				C07DB4D1277E891A0070DE26 /* MakePrettier.swift */,
 				C07DB4CA277E6A930070DE26 /* RotatingPractice.swift */,
 				C07DB4C4277E31BB0070DE26 /* Tshape.swift */,
 			);
 			path = "Scratch Paper";
+			sourceTree = "<group>";
+		};
+		C07DB4D4277E8C1F0070DE26 /* Solid Views */ = {
+			isa = PBXGroup;
+			children = (
+				C07DB4D1277E891A0070DE26 /* HalfScreenLayout.swift */,
+				C0230E372771788500A3D02F /* SpaceApp.swift */,
+			);
+			path = "Solid Views";
+			sourceTree = "<group>";
+		};
+		C07DB4D5277E8C5E0070DE26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0230E5C2771893900A3D02F /* DataController.swift */,
+				C07DB4C7277E42DE0070DE26 /* SizingController.swift */,
+				C08BC5222777B1A200E4F54C /* StateController.swift */,
+				C08BC5252777B23800E4F54C /* StorageController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C07DB4D6277E8C960070DE26 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */,
+				C08BC51327758E4F00E4F54C /* RoundedCorner.swift */,
+				C08BC5102774CF4600E4F54C /* TestData.swift */,
+				C08BC50A2774110500E4F54C /* ViewType.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +356,7 @@
 				C0230E6727718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */,
 				C08BC52F277AC39100E4F54C /* TimeblockingSkeletonView.swift in Sources */,
 				C0230E472771788500A3D02F /* SpaceApp.swift in Sources */,
-				C07DB4D2277E891A0070DE26 /* MakePrettier.swift in Sources */,
+				C07DB4D2277E891A0070DE26 /* HalfScreenLayout.swift in Sources */,
 				C0230E5A27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
 				C08BC50B2774110500E4F54C /* ViewType.swift in Sources */,
 				C07DB4C2277E12C30070DE26 /* TBOmegaView.swift in Sources */,
@@ -367,7 +391,7 @@
 				C0230E6827718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */,
 				C08BC530277AC39100E4F54C /* TimeblockingSkeletonView.swift in Sources */,
 				C0230E482771788500A3D02F /* SpaceApp.swift in Sources */,
-				C07DB4D3277E891A0070DE26 /* MakePrettier.swift in Sources */,
+				C07DB4D3277E891A0070DE26 /* HalfScreenLayout.swift in Sources */,
 				C0230E5B27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
 				C08BC50C2774110500E4F54C /* ViewType.swift in Sources */,
 				C07DB4C3277E12C30070DE26 /* TBOmegaView.swift in Sources */,
