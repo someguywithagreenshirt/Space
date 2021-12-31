@@ -39,14 +39,8 @@ import SwiftUI
 //}
 
 
-#warning("Better todo list")
-// TODO: Better todo list
-// - [ ] TestData for the plannerView is very important
-// - [ ] Create a single unit for the whole timeblocking chunk
-// - [ ] Figure out points for each todo. 18 hours.
-// - [ ] Hardcode 18 hours for timeline. Figure everything out based on 18 hours.
-// - [ ] VStack of ghost todos
-// - [ ] Create test timeblocks for interface
+
+
 struct PlannerView: View {
     
     var body: some View {
@@ -59,7 +53,7 @@ struct PlannerView: View {
                 // The entire timeline chunk
                 ZStack {
                     GeometryReader { timeblockingReader in
-                        let tbr: CGRect = timeblockingReader.frame(in: .local)
+                        //let tbr: CGRect = timeblockingReader.frame(in: .local)
                         
                         
                         TimeblockingSkeletonView()

@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-#warning("Really need to restrict this to a View only")
 protocol ViewTypeProtocol {
     var viewType: ViewType { get set }
 }

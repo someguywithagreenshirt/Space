@@ -7,6 +7,39 @@
 
 import SwiftUI
 
+#warning("Todo List")
+// TODO: Yet Another Todo List
+// - [ ] Test if a center point is enough to place notecard
+// - [ ] Define each position in exact grp terms
+// - [ ] Use asserts more often (and do the compile out thing from twostraws talk
+// - [ ] enum BreakPoint for use with conditionalBreakpoints
+// - [ ] Create test model for realityView
+// - [ ] How do draggable cells in a List work exactly?
+// TODO: Top Tasks
+// - [X] Get the TestData setup
+// - [X] Accept different viewTypes
+// - [X] Make Compact View that will go on timeline (or call it timeline view)
+// - [X] Import BMS round only certain sides object
+// - [ ] Create models for timeblocking
+// - [ ] DateFormatter to get date and times in format I need. Saturday March 04th HH:mm
+// - [ ] Read Todo info from CoreData
+// - [ ] Get encoders and decoders setup
+// - [ ] Turn some of the above and the preview code into snippets
+// - [X] Enum Time in half hour blocks (or should I just Date()?)
+// - [ ] I started doing my own thing because I don't know Date() well enough.
+//       I really need to watch a video Date().
+//
+// TODO: Better todo list
+// - [ ] TestData for the plannerView is very important
+// - [ ] Create a single unit for the whole timeblocking chunk
+// - [ ] Figure out points for each todo. 18 hours.
+// - [ ] Hardcode 18 hours for timeline. Figure everything out based on 18 hours.
+// - [ ] VStack of ghost todos
+// - [ ] Create test timeblocks for interface
+// - [ ] Make ContentView a list of all the destination pages in my app so I can test any out that I need to
+// - [ ]
+// - [ ]
+
 struct TBOmegaView: View {
     // set the size of the array to hours and never let it increase
     // Use optionals. If that position(hour) is nil, then show ghost view
@@ -34,7 +67,7 @@ struct TBOmegaView: View {
             
             let blockHeight = positionOfEachHourStart[1].y - positionOfEachHourStart[0].y
             
-            let blockCheck = grpFrame.height / CGFloat(hours)
+            //let blockCheck = grpFrame.height / CGFloat(hours)
             ZStack {
                 
                 TBGammaView(hours: hours, startHour: startHour)

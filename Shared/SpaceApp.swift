@@ -18,7 +18,17 @@ struct SpaceApp: App {
         WindowGroup {
             if ( UIDevice.current.model.range(of: "iPad") != nil){
                 //print("I AM IPAD")
-                TBOmegaView()
+                //TBOmegaView()
+                Flashcard(front: { Text("Front")
+                        .font(.largeTitle)
+                        .padding(150)
+                        .background(Capsule().fill(.blue))
+                },
+                          back: {Text("Back")
+                        .font(.largeTitle)
+                        .padding(150)
+                        .background(Capsule().fill(.blue))
+                })
             } else {
                 //print("I AM IPHONE")
                 ContentView()

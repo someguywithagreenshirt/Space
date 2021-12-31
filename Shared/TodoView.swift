@@ -6,20 +6,6 @@
 //
 
 import SwiftUI
-#warning("Todo list")
-// TODO: Top Tasks
-// - [X] Get the TestData setup
-// - [X] Accept different viewTypes
-// - [X] Make Compact View that will go on timeline (or call it timeline view)
-// - [X] Import BMS round only certain sides object
-// - [ ] Create models for timeblocking
-// - [ ] DateFormatter to get date and times in format I need. Saturday March 04th HH:mm
-// - [ ] Read Todo info from CoreData
-// - [ ] Get encoders and decoders setup
-// - [ ] Turn some of the above and the preview code into snippets
-// - [X] Enum Time in half hour blocks (or should I just Date()?)
-// - [ ] I started doing my own thing because I don't know Date() well enough.
-//       I really need to watch a video Date().
 
 struct TodoView: View, ViewTypeProtocol {
     var viewType: ViewType = .card
