@@ -25,6 +25,10 @@
 		C06E93E6277F5F2F00C8D5CC /* OneMonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93E4277F5F2F00C8D5CC /* OneMonthCalendarView.swift */; };
 		C06E93E8277F731700C8D5CC /* DecisionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93E7277F731700C8D5CC /* DecisionTree.swift */; };
 		C06E93E9277F731700C8D5CC /* DecisionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93E7277F731700C8D5CC /* DecisionTree.swift */; };
+		C06E93EB277F949000C8D5CC /* ScratchPaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93EA277F949000C8D5CC /* ScratchPaper.swift */; };
+		C06E93EC277F949000C8D5CC /* ScratchPaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93EA277F949000C8D5CC /* ScratchPaper.swift */; };
+		C06E93EE277FBE9300C8D5CC /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93ED277FBE9300C8D5CC /* DateExtensions.swift */; };
+		C06E93EF277FBE9300C8D5CC /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93ED277FBE9300C8D5CC /* DateExtensions.swift */; };
 		C07DB4B9277D389E0070DE26 /* TBBetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4B8277D389E0070DE26 /* TBBetaView.swift */; };
 		C07DB4BA277D389E0070DE26 /* TBBetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4B8277D389E0070DE26 /* TBBetaView.swift */; };
 		C07DB4BC277D69670070DE26 /* TBGammaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4BB277D69670070DE26 /* TBGammaView.swift */; };
@@ -88,6 +92,8 @@
 		C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		C06E93E4277F5F2F00C8D5CC /* OneMonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMonthCalendarView.swift; sourceTree = "<group>"; };
 		C06E93E7277F731700C8D5CC /* DecisionTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionTree.swift; sourceTree = "<group>"; };
+		C06E93EA277F949000C8D5CC /* ScratchPaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchPaper.swift; sourceTree = "<group>"; };
+		C06E93ED277FBE9300C8D5CC /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		C07DB4B8277D389E0070DE26 /* TBBetaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBBetaView.swift; sourceTree = "<group>"; };
 		C07DB4BB277D69670070DE26 /* TBGammaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBGammaView.swift; sourceTree = "<group>"; };
 		C07DB4C1277E12C30070DE26 /* TBOmegaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBOmegaView.swift; sourceTree = "<group>"; };
@@ -200,6 +206,7 @@
 				C07DB4CD277E708A0070DE26 /* Flashcard.swift */,
 				C07DB4CA277E6A930070DE26 /* RotatingPractice.swift */,
 				C07DB4C4277E31BB0070DE26 /* Tshape.swift */,
+				C06E93EA277F949000C8D5CC /* ScratchPaper.swift */,
 			);
 			path = "Scratch Paper";
 			sourceTree = "<group>";
@@ -233,6 +240,7 @@
 				C08BC50D2774152C00E4F54C /* PreviewExtensions.swift */,
 				C08BC51327758E4F00E4F54C /* RoundedCorner.swift */,
 				C08BC5102774CF4600E4F54C /* TestData.swift */,
+				C06E93ED277FBE9300C8D5CC /* DateExtensions.swift */,
 				C08BC50A2774110500E4F54C /* ViewType.swift */,
 			);
 			path = Utilities;
@@ -366,6 +374,7 @@
 				C08BC52F277AC39100E4F54C /* TimeblockingSkeletonView.swift in Sources */,
 				C0230E472771788500A3D02F /* SpaceApp.swift in Sources */,
 				C07DB4D2277E891A0070DE26 /* HalfScreenLayout.swift in Sources */,
+				C06E93EB277F949000C8D5CC /* ScratchPaper.swift in Sources */,
 				C0230E5A27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
 				C06E93E8277F731700C8D5CC /* DecisionTree.swift in Sources */,
 				C08BC50B2774110500E4F54C /* ViewType.swift in Sources */,
@@ -374,6 +383,7 @@
 				C08BC53C277D1B0B00E4F54C /* TimeBlockingView.swift in Sources */,
 				C07DB4B9277D389E0070DE26 /* TBBetaView.swift in Sources */,
 				C0230E61277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
+				C06E93EE277FBE9300C8D5CC /* DateExtensions.swift in Sources */,
 				C08BC5202777AA8A00E4F54C /* TodayView.swift in Sources */,
 				C08BC51D277655C700E4F54C /* Models.swift in Sources */,
 			);
@@ -403,6 +413,7 @@
 				C08BC530277AC39100E4F54C /* TimeblockingSkeletonView.swift in Sources */,
 				C0230E482771788500A3D02F /* SpaceApp.swift in Sources */,
 				C07DB4D3277E891A0070DE26 /* HalfScreenLayout.swift in Sources */,
+				C06E93EC277F949000C8D5CC /* ScratchPaper.swift in Sources */,
 				C0230E5B27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
 				C06E93E9277F731700C8D5CC /* DecisionTree.swift in Sources */,
 				C08BC50C2774110500E4F54C /* ViewType.swift in Sources */,
@@ -411,6 +422,7 @@
 				C08BC53D277D1B0B00E4F54C /* TimeBlockingView.swift in Sources */,
 				C07DB4BA277D389E0070DE26 /* TBBetaView.swift in Sources */,
 				C0230E62277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */,
+				C06E93EF277FBE9300C8D5CC /* DateExtensions.swift in Sources */,
 				C08BC5212777AA8A00E4F54C /* TodayView.swift in Sources */,
 				C08BC51E277655C700E4F54C /* Models.swift in Sources */,
 			);
