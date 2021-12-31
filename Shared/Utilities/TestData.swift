@@ -24,7 +24,7 @@ struct TestData {
     static var todoList: [Models.Todo] = [todo1, todo2, todo3, todo4, todo5]
     
     //static let testBlock = IndividualBlock(blockHeight: 73.444444444444442)
-    static let testBlock = IndividualBlock(blockHeight: 54.33333333333)
+    static let testBlock = IndividualBlock(blockWidth: 200, blockHeight: 54.33333333333)
     
     static let realityLine: [IndividualBlock?] = [
         testBlock,

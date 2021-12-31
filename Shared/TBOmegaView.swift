@@ -8,37 +8,33 @@
 import SwiftUI
 
 #warning("Todo List")
-// TODO: Yet Another Todo List
-// - [ ] Test if a center point is enough to place notecard
-// - [ ] Define each position in exact grp terms
+// - [ ] There is also a todo list on the main SpaceApp file
+//
+// TODO: Models
+// - [X] Create test model for realityView
+// - [ ] TestData for the plannerView is very important
+// - [ ] Create models for timeblocking
+// - [ ] Read Todo info from CoreData
+//
+// TODO: Views
+// - [ ] TimelineView
+    // - [ ] Test if a center point is enough to place notecard
+    // - [ ] Define each position in exact grp terms
+    // - [ ] VStack of ghost todos
+//
+// TODO: Controllers
+// - [ ] DateFormatter to get date and times in format I need. Saturday March 04th HH:mm
+// - [ ] I started doing my own thing because I don't know Date() well enough.
+// - [ ] Get encoders and decoders setup
+//
+// TODO: Tasks
+// - [ ] How do draggable cells in a List work exactly?
+// - [ ] Turn some of the above and the preview code into snippets
+//
+// TODO: Tips
+// - [ ] Make ContentView a list of all the destination pages in my app so I can test any out that I need to more quickly
 // - [ ] Use asserts more often (and do the compile out thing from twostraws talk
 // - [ ] enum BreakPoint for use with conditionalBreakpoints
-// - [ ] Create test model for realityView
-// - [ ] How do draggable cells in a List work exactly?
-// TODO: Top Tasks
-// - [X] Get the TestData setup
-// - [X] Accept different viewTypes
-// - [X] Make Compact View that will go on timeline (or call it timeline view)
-// - [X] Import BMS round only certain sides object
-// - [ ] Create models for timeblocking
-// - [ ] DateFormatter to get date and times in format I need. Saturday March 04th HH:mm
-// - [ ] Read Todo info from CoreData
-// - [ ] Get encoders and decoders setup
-// - [ ] Turn some of the above and the preview code into snippets
-// - [X] Enum Time in half hour blocks (or should I just Date()?)
-// - [ ] I started doing my own thing because I don't know Date() well enough.
-//       I really need to watch a video Date().
-//
-// TODO: Better todo list
-// - [ ] TestData for the plannerView is very important
-// - [ ] Create a single unit for the whole timeblocking chunk
-// - [ ] Figure out points for each todo. 18 hours.
-// - [ ] Hardcode 18 hours for timeline. Figure everything out based on 18 hours.
-// - [ ] VStack of ghost todos
-// - [ ] Create test timeblocks for interface
-// - [ ] Make ContentView a list of all the destination pages in my app so I can test any out that I need to
-// - [ ]
-// - [ ]
 
 struct TBOmegaView: View {
     // set the size of the array to hours and never let it increase
@@ -47,6 +43,7 @@ struct TBOmegaView: View {
     
     //@State var plan: [IndividualBlock] = []
     @State var reality = TestData.realityLine
+    let cardWidth: CGFloat
     
     let hours = 18
     let startHour = 6
@@ -76,22 +73,22 @@ struct TBOmegaView: View {
                     Rectangle()
                         .stroke(lineWidth: 3)
                         .foregroundColor(.secondary)
-                        .frame(width: 200, height: blockHeight)
+                        .frame(width: cardWidth, height: blockHeight)
                         .position(positionOfEachHourStart[pos])
-                        .offset(x: -100, y: blockHeight / 2.0)
+                        .offset(x: -cardWidth/2, y: blockHeight / 2.0)
                 }
                 ForEach (0..<hours) { pos in
                     Rectangle()
                         .stroke(lineWidth: 3)
                         .foregroundColor(.secondary)
-                        .frame(width: 200, height: blockHeight)
+                        .frame(width: cardWidth, height: blockHeight)
                         .overlay(
                             VStack (alignment: .leading, spacing: 0){
                                 Text("Todo")
                                 Text("Description")
                             })
                         .position(positionOfEachHourStart[pos])
-                        .offset(x: 100, y: blockHeight / 2.0)
+                        .offset(x: cardWidth/2, y: blockHeight / 2.0)
                 }
                 
 //                VStack (spacing: 0){
@@ -130,6 +127,7 @@ struct BlockingBlock: View {
 
 
 struct IndividualBlock: View {
+    let blockWidth: CGFloat
     let blockHeight: CGFloat
     let title = TestData.todo1.title
     let description = TestData.todo1.description
@@ -144,7 +142,7 @@ struct IndividualBlock: View {
                 .minimumScaleFactor(0.75)
         }
         //.frame(width: 200, height: blockHeight, alignment: .leading)
-        .frame(minWidth: 200, idealWidth: 200, maxWidth: 200, minHeight: blockHeight, idealHeight: blockHeight, maxHeight: blockHeight, alignment: .leading)
+        .frame(minWidth: blockWidth, idealWidth: blockWidth, maxWidth: blockWidth, minHeight: blockHeight, idealHeight: blockHeight, maxHeight: blockHeight, alignment: .leading)
         .background(.secondary)
         .border(.black)
     }
@@ -169,7 +167,7 @@ extension IndividualBlock: Hashable {
 
 struct TBOmegaView_Previews: PreviewProvider {
     static var previews: some View {
-        TBOmegaView()
+        TBOmegaView(cardWidth: 200)
             .previewDevice(PreviewDevice(rawValue: DeviceNames.ipadPro12.rawValue))
             .previewInterfaceOrientation(.landscapeLeft)
     }
