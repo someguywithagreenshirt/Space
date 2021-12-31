@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-// TODO: Create controller for actual todolist
-// - [ ] Create controller
 struct TodayView: View {
+    let todoList = TestData.todoList
+    
     var body: some View {
         List {
-            ForEach(TestData.todoList) { todo in
+            ForEach(todoList) { todo in
                 HStack {
                     Image(systemName: "square")
                     Text(todo.title)

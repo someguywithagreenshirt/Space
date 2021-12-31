@@ -22,7 +22,7 @@ import SwiftUI
     // - [ ] View to handle import and setup that sync
 // - [ ] Todo ScrollView list, normal list, but tap to turn into compact card,
     // tap again to go to full card. Drag out of list to be compact card and drop on timeblocking.
-// - [ ] a
+// - [ ] Choose theme/colors screen
 // - [ ] a
 // - [ ] a
 // - [ ] a
@@ -46,7 +46,8 @@ struct SpaceApp: App {
 //                        .padding(150)
 //                        .background(Capsule().fill(.blue))
 //                })
-                HalfScreenLayout()
+                
+                DecisionTree()
             } else {
                 //print("I AM IPHONE")
                 ContentView()

@@ -21,6 +21,10 @@
 		C0230E62277189CF00A3D02F /* Todo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230E5F277189CF00A3D02F /* Todo+CoreDataClass.swift */; };
 		C0230E6727718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */; };
 		C0230E6827718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */; };
+		C06E93E5277F5F2F00C8D5CC /* OneMonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93E4277F5F2F00C8D5CC /* OneMonthCalendarView.swift */; };
+		C06E93E6277F5F2F00C8D5CC /* OneMonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93E4277F5F2F00C8D5CC /* OneMonthCalendarView.swift */; };
+		C06E93E8277F731700C8D5CC /* DecisionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93E7277F731700C8D5CC /* DecisionTree.swift */; };
+		C06E93E9277F731700C8D5CC /* DecisionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E93E7277F731700C8D5CC /* DecisionTree.swift */; };
 		C07DB4B9277D389E0070DE26 /* TBBetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4B8277D389E0070DE26 /* TBBetaView.swift */; };
 		C07DB4BA277D389E0070DE26 /* TBBetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4B8277D389E0070DE26 /* TBBetaView.swift */; };
 		C07DB4BC277D69670070DE26 /* TBGammaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07DB4BB277D69670070DE26 /* TBGammaView.swift */; };
@@ -82,6 +86,8 @@
 		C0230E5C2771893900A3D02F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		C0230E5F277189CF00A3D02F /* Todo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C0230E6627718A3C00A3D02F /* Todo+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		C06E93E4277F5F2F00C8D5CC /* OneMonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMonthCalendarView.swift; sourceTree = "<group>"; };
+		C06E93E7277F731700C8D5CC /* DecisionTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionTree.swift; sourceTree = "<group>"; };
 		C07DB4B8277D389E0070DE26 /* TBBetaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBBetaView.swift; sourceTree = "<group>"; };
 		C07DB4BB277D69670070DE26 /* TBGammaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBGammaView.swift; sourceTree = "<group>"; };
 		C07DB4C1277E12C30070DE26 /* TBOmegaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBOmegaView.swift; sourceTree = "<group>"; };
@@ -155,7 +161,6 @@
 				C08BC52E277AC39100E4F54C /* TimeblockingSkeletonView.swift */,
 				C08BC53B277D1B0B00E4F54C /* TimeBlockingView.swift */,
 				C08BC5162776221F00E4F54C /* Timeline.swift */,
-				C08BC51F2777AA8A00E4F54C /* TodayView.swift */,
 				C07DB4D6277E8C960070DE26 /* Utilities */,
 				C08BC507277410AD00E4F54C /* TodoView.swift */,
 			);
@@ -203,7 +208,10 @@
 			isa = PBXGroup;
 			children = (
 				C07DB4D1277E891A0070DE26 /* HalfScreenLayout.swift */,
+				C06E93E4277F5F2F00C8D5CC /* OneMonthCalendarView.swift */,
 				C0230E372771788500A3D02F /* SpaceApp.swift */,
+				C06E93E7277F731700C8D5CC /* DecisionTree.swift */,
+				C08BC51F2777AA8A00E4F54C /* TodayView.swift */,
 			);
 			path = "Solid Views";
 			sourceTree = "<group>";
@@ -354,10 +362,12 @@
 				C07DB4CB277E6A930070DE26 /* RotatingPractice.swift in Sources */,
 				C08BC5262777B23800E4F54C /* StorageController.swift in Sources */,
 				C0230E6727718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */,
+				C06E93E5277F5F2F00C8D5CC /* OneMonthCalendarView.swift in Sources */,
 				C08BC52F277AC39100E4F54C /* TimeblockingSkeletonView.swift in Sources */,
 				C0230E472771788500A3D02F /* SpaceApp.swift in Sources */,
 				C07DB4D2277E891A0070DE26 /* HalfScreenLayout.swift in Sources */,
 				C0230E5A27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
+				C06E93E8277F731700C8D5CC /* DecisionTree.swift in Sources */,
 				C08BC50B2774110500E4F54C /* ViewType.swift in Sources */,
 				C07DB4C2277E12C30070DE26 /* TBOmegaView.swift in Sources */,
 				C08BC51427758E4F00E4F54C /* RoundedCorner.swift in Sources */,
@@ -389,10 +399,12 @@
 				C07DB4CC277E6A930070DE26 /* RotatingPractice.swift in Sources */,
 				C08BC5272777B23800E4F54C /* StorageController.swift in Sources */,
 				C0230E6827718A3C00A3D02F /* Todo+CoreDataHelpers.swift in Sources */,
+				C06E93E6277F5F2F00C8D5CC /* OneMonthCalendarView.swift in Sources */,
 				C08BC530277AC39100E4F54C /* TimeblockingSkeletonView.swift in Sources */,
 				C0230E482771788500A3D02F /* SpaceApp.swift in Sources */,
 				C07DB4D3277E891A0070DE26 /* HalfScreenLayout.swift in Sources */,
 				C0230E5B27717F3E00A3D02F /* Model.xcdatamodeld in Sources */,
+				C06E93E9277F731700C8D5CC /* DecisionTree.swift in Sources */,
 				C08BC50C2774110500E4F54C /* ViewType.swift in Sources */,
 				C07DB4C3277E12C30070DE26 /* TBOmegaView.swift in Sources */,
 				C08BC51527758E4F00E4F54C /* RoundedCorner.swift in Sources */,

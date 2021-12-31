@@ -30,7 +30,7 @@ struct HalfScreenLayout: View {
                         VStack (spacing: 0) {
                             
                             HStack {
-                                // left column
+                                // left column (on right)
                                 VStack (spacing: 12){
                                     let columnWidth = (rhs.width / 2) / 3
                                     Group {
@@ -68,10 +68,9 @@ struct HalfScreenLayout: View {
                                             .padding(.top, 50)
                                     }
                                 }
+                                // right column (on right)
                                 VStack {
-                                    Text("List ScrollView")
-                                    Line(width: rhs.width / 2)
-                                        .padding(.top, 50)
+                                    TodayView()
                                 }
                             }
                         }

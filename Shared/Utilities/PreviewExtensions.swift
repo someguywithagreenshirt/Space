@@ -151,7 +151,7 @@ enum DeviceNames: String {
     case ipadAir = "iPad Air (4th generation)"
     case ipadPro9 = "iPad Pro (9.7-inch)"
     case ipadPro11 = "iPad Pro (11-inch) (3rd generation)"
-    case ipadPro12 = "iPad Pro (12.9-inch) (5th generation)"
+    case ipadPro12 = "iPad Pro (12.9-inch) (5th generation)" // 1366 x 1024 pts
     case ipadmini = "iPad mini (6th generation)"
     case iphone8 =  "iPhone 8"
     case iphone8plus = "iPhone 8 Plus"

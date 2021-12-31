@@ -9,6 +9,7 @@ import SwiftUI
 
 #warning("Todo List")
 // - [ ] There is also a todo list on the main SpaceApp file
+// CMD + " brings me directly to here.
 //
 // TODO: Models
 // - [X] Create test model for realityView
