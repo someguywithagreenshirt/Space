@@ -61,13 +61,24 @@ extension MonthBlockInfo {
     }
 }
 
-//extension IndividualBlock: Hashable {
-//    public func hash(into hasher: inout Hasher) {
-//        hasher.combine(blockHeight)
-//        hasher.combine(title)
-//        hasher.combine(description)
-//    }
-//}
-
-
+func createMonthBlocks (date: Date) -> [MonthBlockInfo] {
+    let monthLayout = MonthLayout(date)
+    
+    var monthArray: [MonthBlockInfo] = (0..<monthLayout.daysInMonth).map { _ in MonthBlockInfo(.dayOfWeek) }
+    
+    for _ in 0..<monthLayout.firstWeekdayOfMonth {
+        monthArray.insert(MonthBlockInfo(.blank), at: 0)
+    }
+    
+    
+    
+    if monthLayout.weekBlock {
+        monthArray.insert(MonthBlockInfo(.weekNumber), at: 0)
+        monthArray.insert(MonthBlockInfo(.weekNumber), at: 8)
+        monthArray.insert(MonthBlockInfo(.weekNumber), at: 16)
+        monthArray.insert(MonthBlockInfo(.weekNumber), at: 24)
+    }
+    
+    return monthArray
+}
 

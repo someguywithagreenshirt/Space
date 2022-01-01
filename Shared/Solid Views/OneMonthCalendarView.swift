@@ -29,7 +29,6 @@ import Algorithms
 
 struct OneMonthCalendarView: View {
     let todaysDate = Date()
-    let calendar: Calendar = Calendar(identifier: .gregorian)
     
     let columns = [
         GridItem(.flexible()),
@@ -52,17 +51,7 @@ struct OneMonthCalendarView: View {
         GridItem(.flexible())
     ]
     
-    let data = (1...31).map { "Day \($0)" }
-    
     var monthArray = { MonthLayout(Date()).monthLayout }
-    
-    //var datesArray = { howToDraw(date: Date()) }
-    //var datesArray = { createMonthBlocks(date: Date()) }
-    
-    var rows: [GridItem] =
-    Array(repeating: .init(.fixed(20)), count: 2)
-    
-    
     
     let leftToolbarItems = ["sidebar.left",
                             "calendar.day.timeline.leading",
@@ -74,7 +63,7 @@ struct OneMonthCalendarView: View {
     var body: some View {
         
         VStack {
-            Header(leftIcons: leftToolbarItems, calendar: calendar, rightIcons: rightToolbarItems)
+            Header(leftIcons: leftToolbarItems, rightIcons: rightToolbarItems)
             MonthDateSquares(columns: columns, data: monthArray()())
             Spacer()
         }
@@ -107,103 +96,15 @@ struct MonthDateSquares: View {
     }
 }
 
-
-
-
-/// Help LazyVStack Draw the month as a calendar
-/// - Parameters:
-///   - month: The month you want drawn
-/// - Returns: -1 for weekblock,
-///             nil for nothing,
-///             day of month as Int for proper days
-func howToDraw(date: Date) -> [Int] {
-    let monthLayout = MonthLayout(date)
-    
-    // make array values start at 1 instead of 0
-    var monthArray: [Int] = (0..<monthLayout.daysInMonth).map { $0 + 1}
-    
-    // shift array to correct weekday placement
-    monthArray.insert(contentsOf: Array<Int>.init(repeating: -2, count: monthLayout.firstWeekdayOfMonth), at: 0)
-    
-    // Put week blocks in
-    if monthLayout.weekBlock {
-        monthArray.insert(-1, at: 0)
-        monthArray.insert(-10, at: 8)
-        monthArray.insert(-100, at: 16)
-        monthArray.insert(-1000, at: 24)
-    }
-    
-    return monthArray.compactMap { $0 }
-}
-
-func createMonthBlocks (date: Date) -> [MonthBlockInfo] {
-    let monthLayout = MonthLayout(date)
-    
-    var monthArray: [MonthBlockInfo] = (0..<monthLayout.daysInMonth).map { _ in MonthBlockInfo(.dayOfWeek) }
-    
-    for _ in 0..<monthLayout.firstWeekdayOfMonth {
-        monthArray.insert(MonthBlockInfo(.blank), at: 0)
-    }
-    
-//    monthArray.insert(contentsOf: Array.init(repeating: MonthBlockInfo(.blank), count: monthLayout.firstWeekdayOfMonth), at: 0)
-    
-    if monthLayout.weekBlock {
-        monthArray.insert(MonthBlockInfo(.weekNumber), at: 0)
-        monthArray.insert(MonthBlockInfo(.weekNumber), at: 8)
-        monthArray.insert(MonthBlockInfo(.weekNumber), at: 16)
-        monthArray.insert(MonthBlockInfo(.weekNumber), at: 24)
-    }
-    
-    
-    return monthArray
-}
-
-//func turnNumberIntoWeekdayWord (num: Int) - > String
-
-func turnNumberIntoMonthWords (num: Int) -> String {
-    switch num {
-    case -1:
-        return "Week"
-    case 0:
-        return "January"
-    case 1:
-        return "February"
-    case 2:
-        return "March"
-    case 3:
-        return "April"
-    case 4:
-        return "May"
-    case 5:
-        return "June"
-    case 6:
-        return "July"
-    case 7:
-        return "August"
-    case 8:
-        return "September"
-    case 9:
-        return "October"
-    case 10:
-        return "November"
-    case 11:
-        return "December"
-    default:
-        return "No Month Found"
-    }
-    
-}
-
 struct Header: View {
     let leftIcons: [String]
-    let calendar: Calendar
     let rightIcons: [String]
     
     var body: some View {
         HStack {
             LeftToolbars(systemNames: leftIcons)
             Spacer()
-            Text("\(DateFormatter().monthSymbols[calendar.component(Calendar.Component.month, from: Date()) - 1])")
+            Text("\(DateFormatter().monthSymbols[Calendar.current.component(Calendar.Component.month, from: Date()) - 1])")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding()
