@@ -78,11 +78,14 @@ struct MonthDateSquares: View {
     
     var body: some View {
         GeometryReader { geo in
+            let monthBlockWidth = geo.size.width / 8 - 3
+            let monthBlockHeight = geo.size.height / 2 - 3
+            
             LazyVGrid(columns: columns, alignment: .leading, spacing: 0) {
                 ForEach(data, id: \.self) { item in
                     Text(item.caseEnum.rawValue)
                         .padding()
-                        .frame(width: geo.size.width / 8 - 3, height: geo.size.height/4)
+                        .frame(width: monthBlockWidth, height: monthBlockHeight)
                     
                         .background(Rectangle()
                                         .stroke(lineWidth: 1))
@@ -93,6 +96,7 @@ struct MonthDateSquares: View {
             .padding(.horizontal)
         }
         .frame(maxHeight: 300)
+        .navigationBarHidden(true)
     }
 }
 

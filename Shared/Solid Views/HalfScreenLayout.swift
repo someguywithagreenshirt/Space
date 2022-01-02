@@ -81,6 +81,7 @@ struct HalfScreenLayout: View {
                 
             }
         }
+        .navigationBarHidden(true)
     }
 }
 
